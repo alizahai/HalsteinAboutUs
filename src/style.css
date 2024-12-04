@@ -1,0 +1,283 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 1.75em;
+  font-weight: 300;
+  color: #262626;
+  letter-spacing: 0;
+  text-transform: initial;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.custom-padding {
+  padding-right: 50px;
+  padding-left: 38px;
+}
+
+.upper-menu {
+  font-size: 13px;
+  color: #434242;
+}
+
+.navbar-nav {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Matches the parent element's text color */
+}
+
+.page-title {
+  height: 549px;
+  background-color: #e5d5c0;
+  background-image: url("https://halstein.qodeinteractive.com/wp-content/uploads/2021/10/p1-title-img-01.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title h1 {
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 1.163em;
+  font-family: Marcellus, serif;
+}
+
+/* Adjust the overall size of the dropdown menu */
+.navbar .dropdown-menu {
+  font-size: 0.9rem !important;
+  padding: 5px 0 !important;
+  width: auto !important;
+  min-width: 0;
+}
+
+/* Reduce the size of individual dropdown items */
+.navbar .dropdown-item {
+  font-size: 0.9rem !important;
+  padding: 5px 15px !important;
+}
+
+/* Remove the default background from the dropdown toggle */
+.navbar .dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  color: black !important;
+  padding: 5px 10px !important; /* Adjust padding to make it smaller */
+}
+
+.navbar img {
+  width: 220.5px;
+  height: 58px;
+}
+
+.nav-link.active.info {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.missionStatement {
+  padding-top: 560px;
+  position: relative;
+}
+
+.mission-img {
+  padding-left: 100px;
+  position: absolute;
+  top: 0;
+}
+
+.missionStatement h2 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.227em;
+  font-family: Marcellus, serif;
+}
+
+.missionStatement h6 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.6em;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #b29063;
+  margin: 25px 0;
+  word-wrap: break-word;
+}
+
+.expertise-section {
+  margin-top: 156px;
+  margin-bottom: 160px;
+}
+
+.expertise-section h6 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.6em;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #b29063;
+  margin: 25px 0;
+  word-wrap: break-word;
+}
+
+.expertise-section h2 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.227em;
+  font-family: Marcellus, serif;
+  margin: 25px 0;
+  word-wrap: break-word;
+}
+
+ol {
+  counter-reset: counter 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* List item container */
+.list-item {
+  display: flex; /* Aligns the number and content horizontally */
+  align-items: flex-start; /* Vertically align items */
+  gap: 15px; /* Space between number and content */
+  margin: 15px 0;
+}
+
+/* Number styling */
+.list-item-number::before {
+  content: "0" counter(counter);
+  counter-increment: counter; /* Increment the counter */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #b29063;
+  display: block;
+  min-width: 40px; /* Align numbers consistently */
+  text-align: center; /* Center-align the number */
+}
+
+.list-item h4 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.285em;
+  font-family: Marcellus, serif;
+  word-wrap: break-word;
+}
+
+.list-item p {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+/* Default styling for desktop and larger screens */
+.sec-img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto; /* Allow height to adjust automatically */
+  max-height: 850px; /* Restrict the maximum height */
+}
+
+.sec-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .sec-img img {
+    object-fit: contain; /* Prevent cropping on smaller screens */
+    max-height: 400px; /* Limit the height for smaller devices */
+  }
+
+  .sec-img {
+    height: auto; /* Allow container to adjust to image size */
+  }
+}
+
+.sec-img h4 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.285em;
+  font-family: Marcellus, serif;
+  word-wrap: break-word;
+}
+
+#carouselAutoplaying {
+  margin-top: 170px;
+  margin-bottom: 65px;
+}
+
+.static-quote {
+  margin-bottom: 64px;
+}
+
+.quote-testimonials {
+  fill: #b29063;
+  stroke: none;
+}
+
+.carousel-item {
+  transition: transform 800ms ease-in-out !important;
+}
+
+.carousel-inner {
+  transition: transform 800ms ease-in-out !important;
+}
+
+.carousel-item h3 {
+  margin: 0 0 56px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.294em;
+  font-family: Marcellus, serif;
+  word-wrap: break-word;
+}
+.carousel-item h6 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.6em;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #b29063;
+  word-wrap: break-word;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Automatically adjust to arrow size */
+  color: black; /* Black arrow color */
+  background: none; /* No background */
+  font-size: 2rem; /* Bigger arrow size */
+}
+
+.carousel-control-prev {
+  left: -2rem; /* Position left arrow further to the edge */
+}
+
+.carousel-control-next {
+  right: -2rem; /* Position right arrow further to the edge */
+}
+
+.carousel-control-next svg {
+  display: block;
+  width: 24px;
+  fill: none;
+  stroke: currentColor;
+}
+.carousel-control-prev svg {
+  display: block;
+  width: 24px;
+  fill: none;
+  stroke: currentColor;
+}

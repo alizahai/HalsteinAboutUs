@@ -22,7 +22,7 @@
           <nav class="navbar navbar-expand-lg p-0">
             <!-- Company logo with a link to the homepage -->
             <a
-              class="navbar-brand custom-padding pt-2 pb-1 m-0"
+              class="navbar-brand custom-padding pt-4 pb-4 m-0"
               href="https://halstein.qodeinteractive.com/"
               rel="home"
             >
@@ -74,9 +74,9 @@
               </div>
 
               <!-- Lower menu for main navigation links -->
-              <div class="w-100">
+              <div class="w-100 pt-3 pb-3">
                 <div class="row row-cols-lg-5">
-                  <ul class="navbar-nav ms-10 w-100 d-flex">
+                  <ul class="navbar-nav ms-5 w-100 d-flex">
                     <!-- Navigation links -->
                     <li class="nav-item d-none d-lg-block">
                       <a
@@ -101,15 +101,19 @@
                         >SHOP</a
                       >
                     </li>
+
                     <!-- Info link with an icon -->
                     <li class="custom border-start nav-item ms-auto">
                       <a
                         class="nav-link active pe-lg-5 ps-lg-5"
                         aria-current="page"
                         href="#"
-                        >INFO
+                      >
+                        <!-- Visible only on larger screens -->
+                        <span class="d-none d-lg-inline">INFO</span>
+
+                        <!-- SVG Icon (Always visible) -->
                         <span>
-                          <!-- SVG Icon -->
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="31"
@@ -529,6 +533,179 @@
         <!-- Right arrow -->
       </button>
     </section>
+
+    <footer>
+      <div class="container m-0 p-0">
+        <div class="row">
+          <!-- Brand and Description -->
+          <div class="col-md-6 px-3 mb-5">
+            <div class="halstein-main-logo">
+              <div class="qodef-m-image">
+                <a
+                  itemprop="url"
+                  href="https://halstein.qodeinteractive.com/"
+                  target="_blank"
+                >
+                  <img
+                    decoding="async"
+                    width="191"
+                    height="51"
+                    src="https://halstein.qodeinteractive.com/wp-content/uploads/2021/10/footer-logo.png"
+                    class="attachment-full size-full"
+                    alt="t"
+                    loading="eager"
+                  />
+                </a>
+              </div>
+            </div>
+            <p class="mt-4 mb-0 footer-heading">
+              Professional & modern, a theme designed to help your business
+              stand out from the rest. For marketing firms, business endeavors &
+              business consulting.
+            </p>
+            <!-- Social Icons -->
+            <div class="d-flex gap-3 mt-4">
+              <a
+                href="https://www.facebook.com/QodeInteractive/"
+                target="http://_blank"
+                class="rounded-circle p-2 text-decoration-none d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+                >FB</a
+              >
+              <a
+                href="#"
+                class="rounded-circle p-2 text-decoration-none d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+                >LI</a
+              >
+              <a
+                href="#"
+                class="rounded-circle p-2 text-decoration-none d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+                >IG</a
+              >
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="col-md-2 px-3 nav-links" style="margin-bottom: 55px">
+            <h5 class="mb-4">Halstein</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">Privacy</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">Conditions</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">Offices</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">Careers</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- FAQ Links -->
+          <div class="col-md-2 px-3 faq-links" style="margin-bottom: 55px">
+            <h5 class="mb-4">FAQ</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">Got any questions?</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">Buying tickets?</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">How to advertise?</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-decoration-none">How to find us?</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Subscribe Section -->
+          <div
+            class="col-md-2 px-3 Subscribe-section"
+            style="margin-bottom: 55px"
+          >
+            <h5>Subscribe</h5>
+            <form class="d-flex align-items-center pb-2">
+              <input
+                size="40"
+                maxlength="400"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="E-mail*"
+                value=""
+                type="email"
+                name="email"
+              />
+              <button type="submit" class="btn text-white px-2">
+                <svg
+                  class="arrow-left slider-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="35px"
+                  height="53px"
+                  viewBox="0 0 35 53"
+                  style="enable-background: new 0 0 35 53"
+                  xml:space="preserve"
+                >
+                  <polyline points="15.4,10.9 30.7,26.4 15.4,42.2"></polyline>
+                  <line x1="0.5" y1="0" x2="0.5" y2="53"></line>
+                </svg>
+              </button>
+            </form>
+            <small class="text-white-50">*Send message</small>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="d-flex flex-column border-top py-1 footer-bottom">
+          <div>
+            <p class="my-2" style="font-size: 13px">
+              © 2022
+              <a href="https://qodeinteractive.com/">Qode Interactive</a>, All
+              Rights Reserved
+            </p>
+          </div>
+
+          <div class="d-flex gap-4 my-2 locations">
+            <a
+              class="border-end border-light pe-4"
+              href="https://www.google.com/maps/place/Paris,+France/@48.8589466,2.2769957,12z/data=!3m1!4b1!4m5!3m4!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219"
+              target="_blank"
+              rel="noopener"
+              >Zurich</a
+            >
+            <a
+              class="border-end border-light pe-4"
+              href="https://www.google.com/maps/place/Paris,+France/@48.8589466,2.2769957,12z/data=!3m1!4b1!4m5!3m4!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219"
+              target="_blank"
+              rel="noopener"
+              >Paris</a
+            >
+            <a
+              class="border-end border-light pe-4"
+              href="https://www.google.com/maps/place/Tokyo,+Japan/@35.6684415,139.6007851,11z/data=!3m1!4b1!4m5!3m4!1s0x60188b857628235d:0xcdd8aef709a2b520!8m2!3d35.6803997!4d139.7690174"
+              target="_blank"
+              rel="noopener"
+              >Tokyo</a
+            >
+            <a
+              href="https://www.google.com/maps/place/Belgrade/@44.8154033,20.2825152,11z/data=!4m5!3m4!1s0x475a7aa3d7b53fbd:0x1db8645cf2177ee4!8m2!3d44.8125449!4d20.4612299"
+              target="_blank"
+              rel="noopener"
+              >Belgrade</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS for interactive elements -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

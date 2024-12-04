@@ -281,3 +281,124 @@ ol {
   fill: none;
   stroke: currentColor;
 }
+footer {
+  background-color: rgb(20, 32, 59);
+  background-image: url(https://halstein.qodeinteractive.com/wp-content/uploads/2021/10/footer-img-01.jpg);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .row {
+  padding-top: 140px;
+  padding-bottom: 87px;
+  margin-right: 45.927px;
+  margin-left: 45.917px;
+}
+
+footer p {
+  unicode-bidi: isolate;
+  color: #b7b8be;
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 28px;
+}
+
+.rounded-circle {
+  background-color: #d4bfa3;
+  color: var(--qode-main-color);
+  border-color: #d4bfa3;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.nav-links h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-family: Marcellus, serif;
+  color: rgb(255, 255, 255);
+}
+
+.list-unstyled li a {
+  color: #b7b8be;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.faq-links h5 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-family: Marcellus, serif;
+  word-wrap: break-word;
+}
+
+.faq-links ul li a {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #b7b8be;
+}
+
+/* Title styling */
+.Subscribe-section h5 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-family: "Marcellus", serif;
+}
+
+/* Input field styling */
+form input {
+  color: white !important; /* Force the text color to white */
+  border: none;
+  background: transparent;
+  flex: 1; /* Makes the input take up the remaining space */
+  padding-left: 0;
+}
+
+/* Placeholder text styling */
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Subtle white placeholder */
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Underline (border-bottom) styling */
+form {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); /* White underline */
+}
+
+/* Arrow SVG */
+.arrow-left {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.footer-bottom {
+  margin-right: 45.927px;
+  margin-left: 45.917px;
+}
+
+.locations a {
+  color: #b7b8be;
+}

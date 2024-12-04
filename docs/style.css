@@ -99,6 +99,7 @@ a {
 }
 
 .missionStatement h6 {
+  margin-top: 55px;
   font-weight: 500;
   font-size: 11px;
   line-height: 1.6em;
@@ -190,18 +191,6 @@ ol {
 .sec-img {
   position: relative;
   overflow: hidden;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  .sec-img img {
-    object-fit: contain; /* Prevent cropping on smaller screens */
-    max-height: 400px; /* Limit the height for smaller devices */
-  }
-
-  .sec-img {
-    height: auto; /* Allow container to adjust to image size */
-  }
 }
 
 .sec-img h4 {

@@ -23,14 +23,21 @@
     border-bottom: none !important;
   }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mission-img {
     padding-left: 50px;
   }
 
   .missionStatement h2 {
     font-size: 32px;
+  }
+  .sec-img img {
+    object-fit: contain; /* Prevent cropping on smaller screens */
+    max-height: 400px; /* Limit the height for smaller devices */
+  }
+
+  .sec-img {
+    height: auto; /* Allow container to adjust to image size */
   }
 }
 
@@ -39,5 +46,15 @@
   .col-md-4 img {
     height: auto;
     width: 100%;
+  }
+}
+
+@media (max-width: 363px) {
+  .missionStatement h6 {
+    margin-top: 25px;
+    font-size: 9px;
+  }
+  .missionStatement h2 {
+    font-size: 28px;
   }
 }

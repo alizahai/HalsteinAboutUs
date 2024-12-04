@@ -83,7 +83,6 @@ a {
 
 .missionStatement {
   padding-top: 560px;
-  position: relative;
 }
 
 .mission-img {
@@ -296,8 +295,9 @@ footer {
 footer .row {
   padding-top: 140px;
   padding-bottom: 87px;
-  margin-right: 45.927px;
-  margin-left: 45.917px;
+  padding-right: 45.927px;
+  padding-left: 45.917px;
+  margin: 0;
 }
 
 footer p {
@@ -364,39 +364,37 @@ footer p {
   font-family: "Marcellus", serif;
 }
 
-/* Input field styling */
-form input {
-  color: white !important; /* Force the text color to white */
-  border: none;
-  background: transparent;
-  flex: 1; /* Makes the input take up the remaining space */
-  padding-left: 0;
-}
-
-/* Placeholder text styling */
-form input::placeholder {
-  color: rgba(255, 255, 255, 0.7); /* Subtle white placeholder */
-  font-size: 1rem;
-  font-family: Arial, sans-serif;
-}
-
 /* Underline (border-bottom) styling */
 form {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7); /* White underline */
 }
 
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+footer form input {
+  color: white !important;
+  background: transparent !important;
+  flex: 1; /* Makes the input take up the remaining space */
+  padding-left: 0;
+}
+
 /* Arrow SVG */
 .arrow-left {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 18px;
   fill: none;
   stroke: currentColor;
 }
 
 .footer-bottom {
-  margin-right: 45.927px;
-  margin-left: 45.917px;
+  padding-right: 45.927px;
+  padding-left: 45.917px;
+  padding: 0 1rem; /* Consistent padding */
+  margin: 0; /* Remove any margins causing overflow */
 }
 
 .locations a {

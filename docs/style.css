@@ -49,18 +49,49 @@ a {
   font-family: Marcellus, serif;
 }
 
-/* Adjust the overall size of the dropdown menu */
-.navbar .dropdown-menu {
+.lang-dropdown {
   font-size: 0.9rem !important;
   padding: 5px 0 !important;
   width: auto !important;
   min-width: 0;
 }
 
+.lowerMenu-dropdown {
+  min-width: 300px;
+}
+
+.lowerMenu-dropdown .menu-item-text {
+  color: #b29063;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2em;
+  margin-left: 20px;
+}
 /* Reduce the size of individual dropdown items */
 .navbar .dropdown-item {
   font-size: 0.9rem !important;
   padding: 5px 15px !important;
+}
+/* Basic dropdown styling */
+.dropdown-submenu .dropdown-menu {
+  position: absolute;
+  left: 100%; /* Position submenu to the right */
+  top: 0;
+  margin-top: -1px;
+  display: none; /* Initially hidden */
+}
+/* Show menu on hover */
+.nav-item.dropdown:hover .lowerMenu-dropdown {
+  display: block;
+}
+/* Show submenu on hover */
+.nav-item.dropdown-submenu:hover .dropdown-sub-menu {
+  display: block;
+}
+/* More specific selector */
+li.nav-item .menu-item-arrow path {
+  fill: #b29063 !important; /* Use !important to ensure it takes precedence */
 }
 
 /* Remove the default background from the dropdown toggle */
@@ -79,6 +110,10 @@ a {
 .nav-link.active.info {
   padding-right: 70px;
   padding-left: 70px;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
 }
 
 .missionStatement {

@@ -41,6 +41,13 @@
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Distribute items evenly */
+  }
+}
+
 @media (max-width: 603px) {
   .col-md-8 img,
   .col-md-4 img {

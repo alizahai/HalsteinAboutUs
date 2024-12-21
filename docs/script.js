@@ -27,3 +27,14 @@ document.getElementById("infoMenuClose").addEventListener("click", function () {
   infoMenuLarge.style.opacity = "0";
   infoMenuLarge.classList.remove("show");
 });
+
+function toggleDropdown(arrow) {
+  const dropdownMenu = arrow.parentElement.querySelector(".dropdown-menu");
+  const isOpen = dropdownMenu.style.display === "block";
+
+  // Toggle the display of the dropdown menu
+  dropdownMenu.style.display = isOpen ? "none" : "block";
+
+  // Optionally, toggle a class on the arrow for styling changes
+  arrow.classList.toggle("open", !isOpen);
+}
